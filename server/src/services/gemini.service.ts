@@ -3,12 +3,12 @@ import { config } from '../config/env';
 import { companyKnowledge } from '../data/knowledge';
 
 const MODELS = [
-  { name: 'gemini-2.0-flash', version: 'v1beta' },
   { name: 'gemini-2.5-flash', version: 'v1beta' },
-  { name: 'gemini-2.0-flash-exp', version: 'v1beta' },
   { name: 'gemini-1.5-flash', version: 'v1beta' },
-  { name: 'gemini-1.5-flash-8b', version: 'v1beta' },
-  { name: 'gemini-1.5-pro', version: 'v1beta' },
+  { name: 'gemma-3-12b', version: 'v1beta' },
+  { name: 'gemma-3-4b', version: 'v1beta' },
+  { name: 'gemma-3-1b', version: 'v1beta' },
+  { name: 'learnlm-1.5-pro-experimental', version: 'v1beta' },
   { name: 'gemini-pro', version: 'v1' }
 ];
 
