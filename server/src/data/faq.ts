@@ -1,4 +1,4 @@
-export const faqCache = {
+export const faqCache: Record<string, string> = {
   // Company Info
   "what is lumos logic": "Lumos Logic is a technology solutions company specializing in web development, mobile apps, AI solutions, cloud services, and digital marketing.",
   "who are you": "I'm InteliQ, the AI assistant for Lumos Logic. I can help you with information about our services, pricing, and how we can help your business.",
