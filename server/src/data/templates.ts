@@ -26,9 +26,11 @@ export const intentPatterns = {
 };
 
 export function getTimeBasedGreeting(): string {
-  const hour = new Date().getHours();
-  if (hour < 12) return templates.greetings.morning[0];
-  if (hour < 18) return templates.greetings.afternoon[0];
+  const hour = new Date().getUTCHours() + 5.5; // IST timezone
+  const localHour = Math.floor(hour) % 24;
+  
+  if (localHour < 12) return templates.greetings.morning[0];
+  if (localHour < 18) return templates.greetings.afternoon[0];
   return templates.greetings.evening[0];
 }
 
